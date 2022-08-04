@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65E26C119BFE6B05A129615C /* Pods_Picterest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A3A53910C2F7F259E6A0BD /* Pods_Picterest.framework */; };
 		C7FE9FD5288E4BC10019B063 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FE9FD4288E4BC00019B063 /* TabBarController.swift */; };
 		C7FE9FD7288E4C5A0019B063 /* FirstCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FE9FD6288E4C5A0019B063 /* FirstCollectionViewController.swift */; };
 		C7FE9FD9288E4C6D0019B063 /* SecondCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FE9FD8288E4C6D0019B063 /* SecondCollectionViewController.swift */; };
@@ -33,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		720B4A474C5615318FF99192 /* Pods-Picterest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picterest.release.xcconfig"; path = "Target Support Files/Pods-Picterest/Pods-Picterest.release.xcconfig"; sourceTree = "<group>"; };
+		92A3A53910C2F7F259E6A0BD /* Pods_Picterest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Picterest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FE9FD4288E4BC00019B063 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		C7FE9FD6288E4C5A0019B063 /* FirstCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewController.swift; sourceTree = "<group>"; };
 		C7FE9FD8288E4C6D0019B063 /* SecondCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCollectionViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		DE15E66428604279003DD2F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE15E66728604279003DD2F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE15E66928604279003DD2F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED41FDDEBC1A3E65C8740A1E /* Pods-Picterest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picterest.debug.xcconfig"; path = "Target Support Files/Pods-Picterest/Pods-Picterest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +69,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E26C119BFE6B05A129615C /* Pods_Picterest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CE60AA86BDD2074634F23EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92A3A53910C2F7F259E6A0BD /* Pods_Picterest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCF1168802C5CAAD074B517F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED41FDDEBC1A3E65C8740A1E /* Pods-Picterest.debug.xcconfig */,
+				720B4A474C5615318FF99192 /* Pods-Picterest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C7FE9FD3288E4B280019B063 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +213,8 @@
 			children = (
 				DE15E65A28604278003DD2F5 /* Picterest */,
 				DE15E65928604278003DD2F5 /* Products */,
+				BCF1168802C5CAAD074B517F /* Pods */,
+				6CE60AA86BDD2074634F23EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE15E66C28604279003DD2F5 /* Build configuration list for PBXNativeTarget "Picterest" */;
 			buildPhases = (
+				A3D841AF7671078166035277 /* [CP] Check Pods Manifest.lock */,
 				DE15E65428604278003DD2F5 /* Sources */,
 				DE15E65528604278003DD2F5 /* Frameworks */,
 				DE15E65628604278003DD2F5 /* Resources */,
+				FDE29E33981EBC962A7106F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -287,6 +314,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A3D841AF7671078166035277 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Picterest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDE29E33981EBC962A7106F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Picterest/Pods-Picterest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Picterest/Pods-Picterest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Picterest/Pods-Picterest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE15E65428604278003DD2F5 /* Sources */ = {
@@ -454,6 +523,7 @@
 		};
 		DE15E66D28604279003DD2F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED41FDDEBC1A3E65C8740A1E /* Pods-Picterest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -481,6 +551,7 @@
 		};
 		DE15E66E28604279003DD2F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 720B4A474C5615318FF99192 /* Pods-Picterest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
