@@ -39,14 +39,14 @@ class ImageCollectionViewCell: UICollectionViewCell {
     }
     
     func configureCell(with imageViewModel: ImageViewModel, indexpath: Int) {
-        self.imageView.load(url: imageViewModel.url)
+        self.imageView.load(urlStr: imageViewModel.url)
         self.imageInfoView.imageTitleOrIndexLabel.text = "\(indexpath)번째 사진"
         self.imageInfoView.indexPath = indexpath
         self.imageInfoView.setSaveStarButton(isSaved: imageViewModel.isSaved)
     }
     
     func configureSavedCell(with savedImageViewModel: SavedImageViewModel, indexpath: Int) {
-        self.imageView.load(url: savedImageViewModel.url)
+        self.imageView.load(urlStr: savedImageViewModel.url)
         self.imageInfoView.imageTitleOrIndexLabel.text = savedImageViewModel.memo
         self.imageInfoView.setSaveStarButton(isSaved: savedImageViewModel.isSaved)
     }
