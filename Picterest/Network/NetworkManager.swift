@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Kingfisher
 import UIKit
 
 let CLIENT_ID = "-zl2niPFVFHI-v3tBrXmhFXu3tGrW8qQbg55-dkXJPU"
@@ -45,22 +46,48 @@ final class NetworkManager {
         
     }
     
-    func fetchImage(url: String, completion: @escaping (UIImage)->Void){
-        guard let url = URL(string: url) else { return }
-        let dataTask = URLSession.shared.dataTask(with: url) { data, response, error in
-            guard
-                let data = data, error == nil,
-                let image = UIImage(data: data)
-                else { return }
-                completion(image)
-        }
-        CacheManager.shared.urlCache.getCachedResponse(for: dataTask) { response in
-            guard let response = response else {
-                dataTask.resume()
-                return
+    func fetchImage(urlStr: String, completion: @escaping (UIImage)->Void){
+        ImageCache.default.retrieveImage(forKey: urlStr, options: nil) { result in
+            switch result {
+            case .success(let value):
+                if let image = value.image {
+                    completion(image)
+                } else {
+                    guard let url = URL(string: urlStr) else { return }
+                    let resource = ImageResource(downloadURL: url, cacheKey: urlStr)
+                    
+                    KingfisherManager.shared.retrieveImage(with: resource) { result in
+                        switch result{
+                        case .success(let value):
+                            if let image = value.image as? UIImage {
+                                completion(image)
+                            }
+                        case .failure(let error):
+                            print(error)
+                        }
+                    }
+                }
+            case .failure(let error):
+                print("Image Load Error \(error.localizedDescription)")
             }
-            guard let image = UIImage(data: response.data) else { return }
-            completion(image)
         }
+        
+        
+//        guard let url = URL(string: url) else { return }
+//        let dataTask = URLSession.shared.dataTask(with: url) { data, response, error in
+//            guard
+//                let data = data, error == nil,
+//                let image = UIImage(data: data)
+//                else { return }
+//                completion(image)
+//        }
+//        CacheManager.shared.urlCache.getCachedResponse(for: dataTask) { response in
+//            guard let response = response else {
+//                dataTask.resume()
+//                return
+//            }
+//            guard let image = UIImage(data: response.data) else { return }
+//            completion(image)
+//        }
     }
 }

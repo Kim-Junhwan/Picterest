@@ -14,7 +14,7 @@ class LocalImageFileManager {
     
     func saveLocalImage(imageViewModel: ImageViewModel,completion: @escaping(String)->Void) {
         guard let imageFilePath = defaultImageFilePath?.appendingPathComponent("\(imageViewModel.id).png") else { return }
-        NetworkManager.shared.fetchImage(url: imageViewModel.url) { image in
+        NetworkManager.shared.fetchImage(urlStr: imageViewModel.url) { image in
             let imageData = image.pngData()
             do {
                 try imageData?.write(to: imageFilePath)
