@@ -8,10 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		62DDEF46701BDF786607434B /* Pods_Picterest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109ABE832301A0EADC294618 /* Pods_Picterest.framework */; };
+		C7F77AF628B0837600C2F947 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F77AF528B0837600C2F947 /* Constants.swift */; };
+		C7F77AF928B1107D00C2F947 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F77AF828B1107D00C2F947 /* TabBarViewController.swift */; };
+		C7F77AFC28B1255D00C2F947 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F77AFB28B1255D00C2F947 /* LoginViewController.swift */; };
+		C7F77AFF28B1352300C2F947 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F77AFE28B1352300C2F947 /* Coordinator.swift */; };
+		C7F77B0428B4851800C2F947 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F77B0328B4851800C2F947 /* AppCoordinator.swift */; };
+		C7F77B0628B4ABC800C2F947 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F77B0528B4ABC800C2F947 /* LoginCoordinator.swift */; };
+		C7F77B0828B4B22900C2F947 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F77B0728B4B22900C2F947 /* TabBarCoordinator.swift */; };
+		C7F77B0A28B4C11200C2F947 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F77B0928B4C11200C2F947 /* LoginViewModel.swift */; };
 		DE15E65C28604278003DD2F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE15E65B28604278003DD2F5 /* AppDelegate.swift */; };
 		DE15E65E28604278003DD2F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE15E65D28604278003DD2F5 /* SceneDelegate.swift */; };
-		DE15E66028604278003DD2F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE15E65F28604278003DD2F5 /* ViewController.swift */; };
-		DE15E66328604278003DD2F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE15E66128604278003DD2F5 /* Main.storyboard */; };
 		DE15E66528604279003DD2F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE15E66428604279003DD2F5 /* Assets.xcassets */; };
 		DE15E66828604279003DD2F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE15E66628604279003DD2F5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,11 +26,17 @@
 		109ABE832301A0EADC294618 /* Pods_Picterest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Picterest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56AF4B3D16A47D51058253D6 /* Pods-Picterest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picterest.release.xcconfig"; path = "Target Support Files/Pods-Picterest/Pods-Picterest.release.xcconfig"; sourceTree = "<group>"; };
 		5DE6F7913EF7F759F024389A /* Pods-Picterest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picterest.debug.xcconfig"; path = "Target Support Files/Pods-Picterest/Pods-Picterest.debug.xcconfig"; sourceTree = "<group>"; };
+		C7F77AF528B0837600C2F947 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C7F77AF828B1107D00C2F947 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		C7F77AFB28B1255D00C2F947 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C7F77AFE28B1352300C2F947 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C7F77B0328B4851800C2F947 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C7F77B0528B4ABC800C2F947 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		C7F77B0728B4B22900C2F947 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		C7F77B0928B4C11200C2F947 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DE15E65828604278003DD2F5 /* Picterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE15E65B28604278003DD2F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE15E65D28604278003DD2F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE15E65F28604278003DD2F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DE15E66228604278003DD2F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE15E66428604279003DD2F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE15E66728604279003DD2F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE15E66928604279003DD2F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,7 +60,6 @@
 				5DE6F7913EF7F759F024389A /* Pods-Picterest.debug.xcconfig */,
 				56AF4B3D16A47D51058253D6 /* Pods-Picterest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +69,67 @@
 				109ABE832301A0EADC294618 /* Pods_Picterest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7F77AF428B0835000C2F947 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C7F77AF528B0837600C2F947 /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		C7F77AF728B1105E00C2F947 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C7F77AF828B1107D00C2F947 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C7F77AFA28B1234E00C2F947 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C7F77AFB28B1255D00C2F947 /* LoginViewController.swift */,
+				C7F77B0928B4C11200C2F947 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C7F77AFD28B1351200C2F947 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C7F77AFE28B1352300C2F947 /* Coordinator.swift */,
+				C7F77B0328B4851800C2F947 /* AppCoordinator.swift */,
+				C7F77B0528B4ABC800C2F947 /* LoginCoordinator.swift */,
+				C7F77B0728B4B22900C2F947 /* TabBarCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C7F77B0028B4694600C2F947 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C7F77AF728B1105E00C2F947 /* TabBar */,
+				C7F77AFD28B1351200C2F947 /* Coordinators */,
+				C7F77AFA28B1234E00C2F947 /* Login */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C7F77B0128B46EB700C2F947 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C7F77B0228B46EC300C2F947 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C7F77B0228B46EC300C2F947 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 		DE15E64F28604278003DD2F5 = {
@@ -81,10 +153,11 @@
 		DE15E65A28604278003DD2F5 /* Picterest */ = {
 			isa = PBXGroup;
 			children = (
+				C7F77B0128B46EB700C2F947 /* Domain */,
+				C7F77B0028B4694600C2F947 /* Presentation */,
+				C7F77AF428B0835000C2F947 /* Util */,
 				DE15E65B28604278003DD2F5 /* AppDelegate.swift */,
 				DE15E65D28604278003DD2F5 /* SceneDelegate.swift */,
-				DE15E65F28604278003DD2F5 /* ViewController.swift */,
-				DE15E66128604278003DD2F5 /* Main.storyboard */,
 				DE15E66428604279003DD2F5 /* Assets.xcassets */,
 				DE15E66628604279003DD2F5 /* LaunchScreen.storyboard */,
 				DE15E66928604279003DD2F5 /* Info.plist */,
@@ -154,7 +227,6 @@
 			files = (
 				DE15E66828604279003DD2F5 /* LaunchScreen.storyboard in Resources */,
 				DE15E66528604279003DD2F5 /* Assets.xcassets in Resources */,
-				DE15E66328604278003DD2F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +279,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE15E66028604278003DD2F5 /* ViewController.swift in Sources */,
+				C7F77AFC28B1255D00C2F947 /* LoginViewController.swift in Sources */,
 				DE15E65C28604278003DD2F5 /* AppDelegate.swift in Sources */,
 				DE15E65E28604278003DD2F5 /* SceneDelegate.swift in Sources */,
+				C7F77AF928B1107D00C2F947 /* TabBarViewController.swift in Sources */,
+				C7F77AF628B0837600C2F947 /* Constants.swift in Sources */,
+				C7F77B0828B4B22900C2F947 /* TabBarCoordinator.swift in Sources */,
+				C7F77AFF28B1352300C2F947 /* Coordinator.swift in Sources */,
+				C7F77B0628B4ABC800C2F947 /* LoginCoordinator.swift in Sources */,
+				C7F77B0A28B4C11200C2F947 /* LoginViewModel.swift in Sources */,
+				C7F77B0428B4851800C2F947 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DE15E66128604278003DD2F5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE15E66228604278003DD2F5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DE15E66628604279003DD2F5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,7 +432,6 @@
 				INFOPLIST_FILE = Picterest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -389,7 +459,6 @@
 				INFOPLIST_FILE = Picterest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
